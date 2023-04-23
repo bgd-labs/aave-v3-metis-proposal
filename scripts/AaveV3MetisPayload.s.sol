@@ -2,12 +2,14 @@
 pragma solidity ^0.8.0;
 
 import {Script} from 'forge-std/Script.sol';
-import {Ghost} from '../src/contracts/Ghost.sol';
+import {AaveV3MetisInitialPayload} from '../src/contracts/AaveV3MetisInitialPayload.sol';
 
-contract Deploy is Script {
+contract DeployPayload is Script {
   function run() external {
     vm.startBroadcast();
-    new Ghost();
+
+    new AaveV3MetisInitialPayload();
+
     vm.stopBroadcast();
   }
 }

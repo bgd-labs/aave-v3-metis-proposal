@@ -5,6 +5,7 @@ script = 'scripts'
 out = 'out'
 libs = ['lib']
 remappings = [
+  'solidity-utils/=lib/aave-helpers/lib/solidity-utils/src/'
 ]
 fs_permissions = [{ access = "write", path = "./reports" }]
 

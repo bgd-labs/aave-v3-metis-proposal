@@ -1,0 +1,16 @@
+# build and cache
+cache/
+out/
+
+# general
+.env
+
+# editors
+.idea
+.vscode
+
+broadcast
+
+# repo specific artifacts
+reports/*
+!reports/.empty
