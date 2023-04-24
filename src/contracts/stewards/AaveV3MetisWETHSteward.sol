@@ -3,6 +3,7 @@ pragma solidity ^0.8.0;
 
 import {BaseV3MetisWithPoolAdmin, IEngine, EngineFlags, Rates} from './BaseV3MetisWithPoolAdmin.sol';
 import {AaveV3MetisAssets, AaveV3MetisPriceFeeds} from '../AaveV3MetisConfigs.sol/';
+
 /**
  * @notice AaveV3MetisWETHSteward
  * @dev Listing Steward for WETH on Aave v3 Metis.
@@ -14,21 +15,20 @@ contract AaveV3MetisWETHSteward is BaseV3MetisWithPoolAdmin {
   function newListings() public pure override returns (IEngine.Listing[] memory) {
     IEngine.Listing[] memory listings = new IEngine.Listing[](1);
 
-    // TODO: contains random values, fill in the real values from the forum
     listings[0] = IEngine.Listing({
       asset: AaveV3MetisAssets.WETH,
       assetSymbol: 'WETH',
       priceFeed: AaveV3MetisPriceFeeds.WETH_USD,
       rateStrategyParams: Rates.RateStrategyParams({
-        optimalUsageRatio: 0,
-        baseVariableBorrowRate: 0,
-        variableRateSlope1: 0,
-        variableRateSlope2: 0,
-        stableRateSlope1: 0,
-        stableRateSlope2: 0,
-        baseStableRateOffset: 0,
-        stableRateExcessOffset: 0,
-        optimalStableToTotalDebtRatio: 0
+        optimalUsageRatio: _bpsToRay(80_00),
+        baseVariableBorrowRate: _bpsToRay(1_00),
+        variableRateSlope1: _bpsToRay(3_80),
+        variableRateSlope2: _bpsToRay(80_00),
+        stableRateSlope1: _bpsToRay(3_80),
+        stableRateSlope2: _bpsToRay(80_00),
+        baseStableRateOffset: _bpsToRay(3_00),
+        stableRateExcessOffset: _bpsToRay(8_00),
+        optimalStableToTotalDebtRatio: _bpsToRay(20_00)
       }),
       enabledToBorrow: EngineFlags.ENABLED,
       stableRateModeEnabled: EngineFlags.DISABLED,
@@ -41,7 +41,7 @@ contract AaveV3MetisWETHSteward is BaseV3MetisWithPoolAdmin {
       reserveFactor: 15_00,
       supplyCap: 50,
       borrowCap: 30,
-      debtCeiling: 7_500_000,
+      debtCeiling: 0,
       liqProtocolFee: 10_00,
       eModeCategory: 0
     });
