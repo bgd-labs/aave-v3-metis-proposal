@@ -11,6 +11,3 @@ out/
 
 broadcast
 
-# repo specific artifacts
-reports/*
-!reports/.empty

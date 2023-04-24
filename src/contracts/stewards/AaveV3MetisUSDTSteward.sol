@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 import {BaseV3MetisWithPoolAdmin, IEngine, EngineFlags, Rates} from './BaseV3MetisWithPoolAdmin.sol';
-import {AaveV3MetisAssets, AaveV3MetisPriceFeeds} from '../AaveV3MetisConfigs.sol/';
+import {AaveV3MetisAssets} from 'aave-address-book/AaveV3Metis.sol';
 
 /**
  * @notice AaveV3MetisUSDTSteward
@@ -12,13 +12,15 @@ import {AaveV3MetisAssets, AaveV3MetisPriceFeeds} from '../AaveV3MetisConfigs.so
  * @author BGD Labs
  */
 contract AaveV3MetisUSDTSteward is BaseV3MetisWithPoolAdmin {
+  address public constant mUSDT_USD = 0x51864b8948Aa5e35aace2BaDaF901D63418A3b9D;
+
   function newListings() public pure override returns (IEngine.Listing[] memory) {
     IEngine.Listing[] memory listings = new IEngine.Listing[](1);
 
     listings[0] = IEngine.Listing({
-      asset: AaveV3MetisAssets.USDT,
-      assetSymbol: 'm.USDT',
-      priceFeed: AaveV3MetisPriceFeeds.USDT_USD,
+      asset: AaveV3MetisAssets.mUSDT_UNDERLYING,
+      assetSymbol: 'mUSDT',
+      priceFeed: mUSDT_USD,
       rateStrategyParams: Rates.RateStrategyParams({
         optimalUsageRatio: _bpsToRay(80_00),
         baseVariableBorrowRate: 0,

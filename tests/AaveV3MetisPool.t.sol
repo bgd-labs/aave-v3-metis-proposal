@@ -13,7 +13,7 @@ interface ISimpleSteward {
 
 contract AaveV3MetisActivation is ProtocolV3_0_1TestBase, TestWithExecutor {
   function setUp() public {
-    vm.createSelectFork(vm.rpcUrl('https://andromeda.metis.io/?owner=1088'), 5448850);
+    vm.createSelectFork(vm.rpcUrl('https://andromeda.metis.io/?owner=1088'), 5452781);
     // TODO: fix after transfering ownership to AaveGovernanceV2.METIS_BRIDGE_EXECUTOR
     _selectPayloadExecutor(0x982486bD81ECc9AD0CE830f72B19dfD22Fab07d5);
   }

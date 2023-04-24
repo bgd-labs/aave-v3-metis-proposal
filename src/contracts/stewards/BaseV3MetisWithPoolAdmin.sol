@@ -10,10 +10,11 @@ import {AaveV3PayloadMetis, IEngine, EngineFlags, Rates} from 'aave-helpers/src/
  * @author BGD Labs
  */
 abstract contract BaseV3MetisWithPoolAdmin is AaveV3PayloadMetis {
-  bytes32 public constant POOL_ADMIN_ROLE_ID =
-    0x12ad05bde78c5ab75238ce885307f96ecd482bb402ef831f99e7018a0f169b7b;
 
   function _postExecute() internal override {
-    AaveV3Metis.ACL_MANAGER.renounceRole(POOL_ADMIN_ROLE_ID, address(this));
+    AaveV3Metis.ACL_MANAGER.renounceRole(
+      AaveV3Metis.ACL_MANAGER.POOL_ADMIN_ROLE(),
+      address(this)
+    );
   }
 }
