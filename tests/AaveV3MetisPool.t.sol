@@ -40,5 +40,13 @@ contract AaveV3MetisActivation is ProtocolV3_0_1TestBase, TestWithExecutor {
     }
 
     createConfigurationSnapshot('post-stewards-aave-v3-metis', AaveV3Metis.POOL);
+    diffReports(
+      'pre-proposal-aave-v3-metis',
+      'post-proposal-aave-v3-metis'
+    );
+    diffReports(
+      'post-proposal-aave-v3-metis',
+      'post-stewards-aave-v3-metis'
+    );
   }
 }
