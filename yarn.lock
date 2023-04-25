@@ -12,10 +12,10 @@
   resolved "https://registry.yarnpkg.com/@bgd-labs/aave-address-book/-/aave-address-book-1.22.0.tgz#b1be941cf41e965985a7b26d6f71d754f3f0f0d1"
   integrity sha512-XnWGiFtssK17Ql6TCKoQYUkffmgnNUo3zge52Dr7UrxUZO0GoNo834MLTUxgr5uKme65Cak2srH+OZlNplia4Q==
 
-"@bgd-labs/report-engine@^0.0.8":
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/@bgd-labs/report-engine/-/report-engine-0.0.8.tgz#bfbf3455717ded9b3d1412b1e7bc9720e9861830"
-  integrity sha512-Ctzi09ppp4RX9+RN59HNB67CyRHIoHJpQcRAQK3zH38IjsdKKJg7Po0+EZ3E9OIaL30tGRY9H/b+pnGMaUdq2w==
+"@bgd-labs/report-engine@^0.0.9":
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/@bgd-labs/report-engine/-/report-engine-0.0.9.tgz#610493e2962bcbbf692d06e8ebdd88eb2f40b8fc"
+  integrity sha512-YtQxcPhAopTQh1NNcl+338ubSHBdf48MbeKGlI2XF/eWPQCGxNHsLW62osc7gSZYqLKM1wz2vYTGkjFNifSeVA==
   dependencies:
     json-bigint "^1.0.0"
     node-fetch "^2.6.9"
