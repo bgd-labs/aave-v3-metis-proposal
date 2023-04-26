@@ -9,6 +9,9 @@ update:; forge update
 build  :; forge build --sizes
 test   :; forge test -vvv
 
+deploy-payload :; forge script scripts/AaveV3MetisPayload.s.sol:DeployPayload --rpc-url metis --broadcast --legacy --ledger --mnemonic-indexes ${MNEMONIC_INDEX} --sender ${LEDGER_SENDER} --verify -vvvv
+create-proposal :; forge script scripts/CreateProposal.s.sol:MetisPoolActivationProposal --rpc-url mainnet --broadcast --legacy --ledger --mnemonic-indexes ${MNEMONIC_INDEX} --sender ${LEDGER_SENDER} --verify -vvvv
+
 # Utilities
 download :; cast etherscan-source --chain ${chain} -d src/etherscan/${chain}_${address} ${address}
 git-diff :
