@@ -23,7 +23,7 @@
     "prettier-plugin-solidity": "1.1.3"
   },
   "dependencies": {
-    "@bgd-labs/aave-address-book": "^1.22.0",
+    "@bgd-labs/aave-address-book": "^1.23.0",
     "@bgd-labs/report-engine": "^0.0.9",
     "dotenv": "^16.0.3",
     "viem": "^0.3.11"

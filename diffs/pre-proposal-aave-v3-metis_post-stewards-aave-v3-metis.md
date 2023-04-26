@@ -11,7 +11,7 @@
 | oracle | [0x3BBe70e2F96c87aEce7F67A2b0178052f62E37fE](https://andromeda-explorer.metis.io/address/0x3BBe70e2F96c87aEce7F67A2b0178052f62E37fE) |
 | oracleDecimals | 8 |
 | oracleDescription | ETH / USD |
-| oracleLatestAnswer | 1841.5752274 |
+| oracleLatestAnswer | 1917.62130799 |
 | aToken | [0x85ABAdDcae06efee2CB5F75f33b6471759eFDE24](https://andromeda-explorer.metis.io/address/0x85ABAdDcae06efee2CB5F75f33b6471759eFDE24) |
 | aTokenImpl | [0x246405C70461f93513C74606815615c24c5C8C79](https://andromeda-explorer.metis.io/address/0x246405C70461f93513C74606815615c24c5C8C79) |
 | borrowingEnabled | true |
@@ -56,7 +56,7 @@
 | oracle | [0xe0351cAAE70B5AdBD0107cD5331AD1D79c4c1CA1](https://andromeda-explorer.metis.io/address/0xe0351cAAE70B5AdBD0107cD5331AD1D79c4c1CA1) |
 | oracleDecimals | 8 |
 | oracleDescription | DAI / USD |
-| oracleLatestAnswer | 0.9999929 |
+| oracleLatestAnswer | 1.0001929 |
 | aToken | [0xd9fa75D14c26720d5ce7eE2530793a823e8f07b9](https://andromeda-explorer.metis.io/address/0xd9fa75D14c26720d5ce7eE2530793a823e8f07b9) |
 | aTokenImpl | [0x246405C70461f93513C74606815615c24c5C8C79](https://andromeda-explorer.metis.io/address/0x246405C70461f93513C74606815615c24c5C8C79) |
 | borrowingEnabled | true |
@@ -101,7 +101,7 @@
 | oracle | [0xD4a5Bb03B5D66d9bf81507379302Ac2C2DFDFa6D](https://andromeda-explorer.metis.io/address/0xD4a5Bb03B5D66d9bf81507379302Ac2C2DFDFa6D) |
 | oracleDecimals | 8 |
 | oracleDescription | METIS / USD |
-| oracleLatestAnswer | 26.4461615 |
+| oracleLatestAnswer | 28.15375937 |
 | aToken | [0x8acAe35059C9aE27709028fF6689386a44c09f3a](https://andromeda-explorer.metis.io/address/0x8acAe35059C9aE27709028fF6689386a44c09f3a) |
 | aTokenImpl | [0x246405C70461f93513C74606815615c24c5C8C79](https://andromeda-explorer.metis.io/address/0x246405C70461f93513C74606815615c24c5C8C79) |
 | borrowingEnabled | true |
@@ -146,7 +146,7 @@
 | oracle | [0x663855969c85F3BE415807250414Ca9129533a5f](https://andromeda-explorer.metis.io/address/0x663855969c85F3BE415807250414Ca9129533a5f) |
 | oracleDecimals | 8 |
 | oracleDescription | USDC / USD |
-| oracleLatestAnswer | 1 |
+| oracleLatestAnswer | 0.99999 |
 | aToken | [0x885C8AEC5867571582545F894A5906971dB9bf27](https://andromeda-explorer.metis.io/address/0x885C8AEC5867571582545F894A5906971dB9bf27) |
 | aTokenImpl | [0x246405C70461f93513C74606815615c24c5C8C79](https://andromeda-explorer.metis.io/address/0x246405C70461f93513C74606815615c24c5C8C79) |
 | borrowingEnabled | true |
@@ -191,7 +191,7 @@
 | oracle | [0x51864b8948Aa5e35aace2BaDaF901D63418A3b9D](https://andromeda-explorer.metis.io/address/0x51864b8948Aa5e35aace2BaDaF901D63418A3b9D) |
 | oracleDecimals | 8 |
 | oracleDescription | USDT / USD |
-| oracleLatestAnswer | 1.00024787 |
+| oracleLatestAnswer | 1.00005 |
 | aToken | [0x7314Ef2CA509490f65F52CC8FC9E0675C66390b8](https://andromeda-explorer.metis.io/address/0x7314Ef2CA509490f65F52CC8FC9E0675C66390b8) |
 | aTokenImpl | [0x246405C70461f93513C74606815615c24c5C8C79](https://andromeda-explorer.metis.io/address/0x246405C70461f93513C74606815615c24c5C8C79) |
 | borrowingEnabled | true |
@@ -255,7 +255,7 @@
         "oracle": "0x3BBe70e2F96c87aEce7F67A2b0178052f62E37fE",
         "oracleDecimals": 8,
         "oracleDescription": "ETH / USD",
-        "oracleLatestAnswer": 184157522740,
+        "oracleLatestAnswer": 191762130799,
         "reserveFactor": 1500,
         "stableBorrowRateEnabled": false,
         "stableDebtToken": "0xf1cd706E177F3AEa620c722Dc436B5a2066E4C68",
@@ -291,7 +291,7 @@
         "oracle": "0xe0351cAAE70B5AdBD0107cD5331AD1D79c4c1CA1",
         "oracleDecimals": 8,
         "oracleDescription": "DAI / USD",
-        "oracleLatestAnswer": 99999290,
+        "oracleLatestAnswer": 100019290,
         "reserveFactor": 1000,
         "stableBorrowRateEnabled": false,
         "stableDebtToken": "0xb4984c08984776074fB9BB78fFE24e9F1E97CD3F",
@@ -327,7 +327,7 @@
         "oracle": "0xD4a5Bb03B5D66d9bf81507379302Ac2C2DFDFa6D",
         "oracleDecimals": 8,
         "oracleDescription": "METIS / USD",
-        "oracleLatestAnswer": 2644616150,
+        "oracleLatestAnswer": 2815375937,
         "reserveFactor": 1500,
         "stableBorrowRateEnabled": false,
         "stableDebtToken": "0x38cFF1C1dFE9e2566F11CB717Ac43fa56fEeCFbd",
@@ -363,7 +363,7 @@
         "oracle": "0x663855969c85F3BE415807250414Ca9129533a5f",
         "oracleDecimals": 8,
         "oracleDescription": "USDC / USD",
-        "oracleLatestAnswer": 100000000,
+        "oracleLatestAnswer": 99999000,
         "reserveFactor": 1000,
         "stableBorrowRateEnabled": false,
         "stableDebtToken": "0x81aC531A7CA8Bdaeb571d8d948e29481A35495C8",
@@ -399,7 +399,7 @@
         "oracle": "0x51864b8948Aa5e35aace2BaDaF901D63418A3b9D",
         "oracleDecimals": 8,
         "oracleDescription": "USDT / USD",
-        "oracleLatestAnswer": 100024787,
+        "oracleLatestAnswer": 100005000,
         "reserveFactor": 1000,
         "stableBorrowRateEnabled": false,
         "stableDebtToken": "0xeF547E238d689BAa811E597105A596bBE2Fe0761",
