@@ -2,9 +2,9 @@
 pragma solidity ^0.8.0;
 
 import {GovHelpers} from 'aave-helpers/src/GovHelpers.sol';
-import {MetisScript} from 'aave-helpers/src/ScriptUtils.sol';
+import {EthereumScript} from 'aave-helpers/src/ScriptUtils.sol';
 
-contract MetisPoolActivationProposal is MetisScript {
+contract MetisPoolActivationProposal is EthereumScript {
   function run() external broadcast {
     GovHelpers.Payload[] memory payloads = new GovHelpers.Payload[](1);
     payloads[0] = GovHelpers.buildMetis(
