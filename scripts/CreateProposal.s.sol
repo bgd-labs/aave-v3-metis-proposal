@@ -8,11 +8,11 @@ contract MetisPoolActivationProposal is MetisScript {
   function run() external broadcast {
     GovHelpers.Payload[] memory payloads = new GovHelpers.Payload[](1);
     payloads[0] = GovHelpers.buildMetis(
-      0x0000000000000000000000000000000000000000 // TODO: add payload
+      0xF7780A54Ee6f99EE9C028ae552149CFbDDbaDfc4
     );
     GovHelpers.createProposal(
       payloads,
-      0x0000000000000000000000000000000000000000000000000000000000000000 // TODO: add hash
+      0x88fe4221f62941318ccf081f96903433613e3a7e0eabf5165b6e0f4845541f3e
     );
   }
 }
