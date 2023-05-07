@@ -17,6 +17,19 @@ cp .env.example .env
 forge install
 ```
 
+## Anvil fork simulation
+
+1. Create an anvil fork of the metis mainnet that runs on the localhost.
+```
+make create-anvil-fork
+```
+2. Open another terminal and run the following command. This will execute the payload and the stewards to activate the pool.
+```
+make setup-fork
+```
+
+The url returned by creating the anvil fork in step 1 can be plugged into the aave interface to test stuff.
+
 ## Test
 
 ```sh
