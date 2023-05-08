@@ -24,13 +24,11 @@ cast send 0x4e868c3ef973370efec01e421981458afbd7bd0f "execute()" --from $METIS_W
 echo "Executing WETH Steward"
 cast send 0x31143380d36dde8161b7e101365fb27e9bd28eee "execute()" --from $METIS_WHALE --gas-price 100000000000 --gas-limit 5000000
 
-echo "Approving 1 WETH to the pool from AAVE_WHALE"
-cast send 0x420000000000000000000000000000000000000a --from $METIS_WHALE "approve(address,uint256)" 0x90df02551bB792286e8D4f13E0e357b4Bf1D6a57 1000000000000000000
+cast send 0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000 --from $METIS_WHALE "transfer(address,uint256)(bool)" $USER_ADDRESS_TO_FUND 100000000000000000000 --legacy --gas-limit 100000000
+cast send 0x420000000000000000000000000000000000000A --from $METIS_WHALE "transfer(address,uint256)(bool)" $USER_ADDRESS_TO_FUND 10000000000000000000 --legacy --gas-limit 100000000
+cast send 0xEA32A96608495e54156Ae48931A7c20f0dcc1a21 --from $METIS_WHALE "transfer(address,uint256)(bool)" $USER_ADDRESS_TO_FUND 10000000000 --legacy --gas-limit 100000000
+cast send 0xbB06DCA3AE6887fAbF931640f67cab3e3a16F4dC --from $METIS_WHALE "transfer(address,uint256)(bool)" $USER_ADDRESS_TO_FUND 10000000000 --legacy --gas-limit 100000000
 
-echo "Supplying 1 WETH from AAVE_WHALE"
-cast send 0x90df02551bB792286e8D4f13E0e357b4Bf1D6a57 --from $METIS_WHALE "supply(address,uint256,address,uint16)" 0x420000000000000000000000000000000000000a 1000000000000000000 0x1E5CE6F088fD0adb4fCFf31Cfb02A61503311bE9 0
-
-echo "Borrowing 0.1 WETH from AAVE_WHALE"
-cast send 0x90df02551bB792286e8D4f13E0e357b4Bf1D6a57 --from $METIS_WHALE "borrow(address,uint256,uint256,uint16,address)" 0x420000000000000000000000000000000000000a 100000000000000000 2 0 0x1E5CE6F088fD0adb4fCFf31Cfb02A61503311bE9
+cast rpc anvil_setBalance $USER_ADDRESS_TO_FUND 10000000000000000000
 
 echo "Fork setup finished"
